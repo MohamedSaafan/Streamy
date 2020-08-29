@@ -1,0 +1,34 @@
+{
+  "streams": [
+    {
+      "title": "this is my first title",
+      "description": "hi there, i will check if this works",
+      "id": 1
+    },
+    {
+      "title": "this is my first title",
+      "description": "hi there, i will check if this works",
+      "id": 2
+    },
+    {
+      "title": "hi",
+      "description": "hi again",
+      "id": 3
+    },
+    {
+      "title": "hi",
+      "description": "hi again",
+      "id": 4
+    },
+    {
+      "title": "hi",
+      "description": "hi again",
+      "id": 5
+    },
+    {
+      "title": "hi",
+      "description": "hi again",
+      "id": 6
+    }
+  ]
+}
