@@ -43,17 +43,14 @@ class GooglOAuth extends React.Component {
     }
     if (this.props.isSignedIn) {
       return (
-        <button
-          onClick={this.onSingOutClick}
-          className="btn btn-success rounded"
-        >
-          sign Out
+        <button onClick={this.onSingOutClick} className="btn rounded nav-link">
+          Sign out
         </button>
       );
     }
     return (
-      <button onClick={this.onSingInClick} className="btn btn-success  rounded">
-        <span className="fa fa-google fa-xl text-success "></span> sign In With
+      <button onClick={this.onSingInClick} className="btn nav-link rounded">
+        <span className="fa fa-google fa-xl text-success "></span> Sign In With
         Google
       </button>
     );

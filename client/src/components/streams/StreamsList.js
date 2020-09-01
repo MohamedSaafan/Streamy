@@ -13,10 +13,12 @@ class StreamsList extends React.Component {
     if (stream.userId === this.props.currentUser) {
       return (
         <div>
-          <Link to={`/streams/edit/${stream.id}`} classNames="btn btn-primary">
-            Edit{" "}
+          <Link to={`/streams/edit/${stream.id}`} className="btn btn-primary">
+            Edit
           </Link>
-          <Button className="danger">Delete</Button>
+          <Link to={`/streams/delete/${stream.id}`} className="btn btn-danger">
+            Delete
+          </Link>
         </div>
       );
     }
@@ -35,7 +37,8 @@ class StreamsList extends React.Component {
   renderStreamList = () => {
     return this.props.streams.map((stream) => {
       return (
-        <div>
+        <div key={stream.id}>
+          {stream.id}
           <Media className="mb-5">
             <Media top left href="#" className="mr-5">
               <Media
@@ -50,6 +53,10 @@ class StreamsList extends React.Component {
               {stream.description}
               {this.renderAdmin(stream)}
             </Media>
+            <Link to={`/streams/${stream.id}`} className="btn btn-primary">
+              {" "}
+              Show Stream
+            </Link>
           </Media>
           <hr />
         </div>

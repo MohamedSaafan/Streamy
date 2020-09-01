@@ -1,0 +1,14 @@
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(128, 128, 128, 0.7);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-modal {
+  background-color: white;
+  border-radius: 10px;
+}
